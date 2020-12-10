@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi primer pagina web - Curso CODERHOUSE"/>
+    <meta name="autor" content="m.ferreyra1985@gmail.com"/>
+    <meta name="keywords" content="susui, bar, restaurant, harakiri"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harakiri de una</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- FUENTE ORBITRON -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FUENTE NERKO ONE -->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- BOOSTRAP 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    <header id="header-container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/HarakiriFace1.jpg" alt="logo-harakiri-de-una">
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">HOME</a> 
+                    </li>
+                    <li id="menu-dropdown">
+                        <!-- <a href="#menu">Menú</a> -->
+                        <span>MENÚ</span>
+                        <ul id="menu-dropdown-values">
+                            <li><a href="#menu-combinados">COMBINADOS</a></li>
+                            <li><a href="#menu-obetos">OBENTOS</a></li>
+                            <li><a href="#menu-adicionales">ADICIONALES</a></li>
+                            <li><a href="#menu-bebidas">BEBIDAS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pedironline">PEDIR ONLINE</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">CONTACTO</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block w-100" src="./images/menu-art.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>PROMO NUEVA WEB</p>
+                    <p>15% OFF durante Diciembre</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="./images/main-cover.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>Calidad garantizada</p>
+                  </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100" src="./images/main-cover1.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>ABRIMOS</p>
+                    <p>¡ Vení a visitarnos !</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+    </main>
+
+    <section id="menu-combinados">
+        <h1>MENU</h1>
+        <h3>COMBINADOS SUSHI</h3>
+    </section>
+    <section id="menu-obentos">
+        <h3>OBENTOS</h3>
+    </section>
+    <section id="menu-adicionales">
+        <h3>ADICIONALES</h3>
+    </section>
+    <section id="menu-bebidas">
+        <h3>BEBIDAS</h3>
+    </section>
+    <section id="pedironline">
+        <h3>PEDIR ONLINE</h3>
+    </section>
+
+    <section id="contacto">        
+        
+        <div class="form-container">
+            
+            <div class="contact-form">
+                <form action="">
+                    <h4>Contacto</h4>
+                    <div class="footer-form">
+                        <div><label for="nombre">Nombre</label></div>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+                    </div>
+                    <div class="footer-form">
+                        <div><label for="email">Correo electrónico</label></div>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="footer-form">
+                        <div><label for="comentario">Comentario</label></div>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Que hay en su mente en este momento..."></textarea>
+                    </div>
+                    <div class="footer-form">
+                        <input type="submit" name="submit" id="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>    
+        </div>
+        
+        <div class="contact-map-container">
+
+            <div class="contact-map">
+                <h4>¿Dónde estamos?</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.539512951876!2d-58.430113784175326!3d-34.59051656430796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e734a979b7%3A0xe736cc745580ee4b!2zSGFyYWtpcmkgZGUgVW5hIOiFueWIh-OCiuODu-OBp-OBhuOBqg!5e0!3m2!1sen!2sar!4v1605988621111!5m2!1sen!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    
+            </div>
+            <div class="contact-map-datos"> 
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Lunes: Cerrado </span>
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Martes a sábados: 18:00-23:00 </span>
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Domingos: las 24 horas </span>
+
+                <span><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i> Honduras 4756, Palermo SOHO </span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-2514-8474</span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-5428-9023</span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-5864-9116</span>
+            </div>
+        </div>
+
+    </section>       
+
+    <footer id="footer-container">
+        <div class="footer-social">
+            <h4>Nuestras redes sociales</h4>
+            <a href="https://www.facebook.com/Harakiri-de-una-280038192635243/"><i class="fa fa-facebook-square fa-2x face-icon" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/harakirideuna/" target="_blank"><i class="fa fa-instagram fa-2x insta-icon" aria-hidden="true"></i> </a>
+            <a href="https://www.youtube.com/watch?v=n_PCwqChRIk&ab_channel=HarakiriDeUna" target="_blank"><i class="fa fa-youtube fa-2x youtu-icon" aria-hidden="true"></i></a>
+        </div>  
+
+        <div class="footer-options">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#acercade">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="#">¿ Quiénes somos ?</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-derechos">
+            <p>Derechos reservados 2020 </p> 
+        </div>
+    </footer>
+
+
+    <!-- WHATSAPP! -->
+    <a href="https://api.whatsapp.com/send?phone=5491125148474&text=Hola%20Harakiri de una%21%20Quisiera%20realizar%20un%20pedido." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+        
+</body>
+</html>
