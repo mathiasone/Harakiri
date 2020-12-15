@@ -25,36 +25,39 @@
 
     <!-- BOOSTRAP 4 -->
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- BOOSTRAP! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <header class="w-100 d-flex flex-row justify-content-between fixed-top bg-light">
+    <header class="fixed-top w-100 d-flex flex-row justify-content-between">
         <a class="navbar-brand" href="./index.html">
             <img src="./images/HarakiriFace_209px50px.png" alt="harakiri-logo">
         </a>
-    
-        <nav class="navbar navbar-expand-lg navbar-light">
-    
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-light" href="./index.html">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pedir-online">PEDIR ONLINE</a>
+                        <a class="nav-link text-light" href="#pedir-online">PEDIR ONLINE</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             MENÚ
                         </a>
@@ -69,10 +72,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">NOSOTROS</a>
+                        <a class="nav-link text-white" href="#nosotros">NOSOTROS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                        <a class="nav-link text-white" href="#contacto">CONTACTO</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +83,7 @@
     </header>
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -117,20 +120,92 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
     </main>
 
     <section id="pedir-online">
-        <h3>PEDIR ONLINE</h3>
+        <h1 class="font-nerko-one">PEDIR ONLINE</h1>
     </section>
 
+    <h1 class="font-nerko-one">MENÚ</h1>
+
     <section id="menu-combinados">
-        <h1>MENU</h1>
-        <h3>COMBINADOS SUSHI</h3>
+        <h3 class="text-center">COMBINADOS SUSHI</h3>
+        <div class="container">
+            <div class="row row-cols-2 p-5 align-items-center border-danger">
+                <div class="col col-6">
+                    <p class="text-center">ALL SALMÓN - 16 piezas</p>
+                    <p class="text-center">4 Nigiri de salmón</p>
+                    <p class="text-center">4 Sashimi de salmón</p>
+                    <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
+                    <p class="text-center"> 4 Sake maki (salmón)</p>
+                </div>
+                <div class="col col-6 text-center"><img src="./images/menu-combinados/all_salmon.jpg" alt="all-salmon"
+                        class="img-thumbnail text-center" style="width: 300px; margin: auto;">
+                </div>
+    
+    
+                <div class="div col col-6 text-center"><img src="./images/menu-combinados/muramasa.jpg"
+                        alt="muramasa" class="img-thumbnail" style="width: 300px;">
+                </div>
+                <div class="col col-6">
+                    <p class="text-center">MURAMASA - 12 piezas</p>
+                    <p class="text-center">4 Tuna roll (Atún, mayonesa y lechuga)</p>
+                    <p class="text-center">4 California (Kanikama, palta y pepino)/p>
+                    <p class="text-center">4 New York (salmón y palta)</p>
+                </div>
+    
+                <div class="div col-6">
+                    <p class="text-center">ONIMARU - 12 piezas</p>
+                    <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
+                    <p class="text-center">4 New York (salmón y palta)</p>
+                    <p class="text-center">4 Sake kawa (piel de salmón grillada y laqueada en salsa teriyaki, queso crema y
+                        pepino</p>
+                </div>
+                <div class="div col-6 text-center"><img src="./images/menu-combinados/onimaru.jpg" alt="onimaru"
+                        class="img-thumbnail text-center" style="width: 300px;">
+                </div>
+    
+                <div class="div col-6 text-center"><img src="./images/menu-combinados/yokozuna.jpg" alt="yokozuna"
+                        class="img-thumbnail" style="width: 300px;">
+                </div>
+                <div class="div col-6">
+                    <p class="text-center">YOKOZUNA - 32 piezas</p>
+                    <p class="text-center">4 Sashimi de salmón</p>
+                    <p class="text-center">4 Nigiri de salmón</p>
+                    <p class="text-center">4 Nigiri blanco</p>
+                    <p class="text-center">3 Nigiri de langostinos</p>
+                    <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
+                    <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
+                    <p class="text-center">5 Sake maki (salmón)</p>
+                    <p class="text-center">4 Hot roll Niku</p>
+                </div>
+    
+                <div class="div col-6 p-3">
+                    <p class="text-center">VEGETARIANO</p>
+                    <p class="text-center">8 Kenkou (Vegetariano: shiitake, palta, zanahoria y pepino)</p>
+                    <p class="text-center">4 Kappa maki (pepino)</p>
+                    <p class="text-center">Inarizushi ó Agedofu (puede variar sin previo aviso)</p>
+                </div>
+                <div class="div col-6 text-center p-3"><img src="./images/menu-combinados/vegetariano.jpg" alt="vegetariano"
+                        class="img-thumbnail text-center" style="width: 300px;">
+                </div>
+    
+                <div class="div col-6 p-3 text-center"><img src="./images/menu-combinados/hot roll.jpg"
+                        alt="hot-roll" class="img-thumbnail" style="width: 300px;">
+                </div>
+                <div class="div col-6 p-3">
+                    <p class="text-center">HOT ROLL</p>
+                    <p class="text-center">4 Saku Saku Niku (carne marinada, queso crema, shiitake, tomates y mango
+                        rebozados en panko</p>
+                    <p class="text-center">4 Saku Saku EBI (Langostinos cocidos, queso crema y tomates rebozados en panko)
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="menu-obentos">
         <h3>OBENTOS</h3>
+
     </section>
     <section id="menu-adicionales">
         <h3>ADICIONALES</h3>
@@ -138,33 +213,30 @@
     <section id="menu-bebidas">
         <h3>BEBIDAS</h3>
     </section>
-    <section id="nosotros">
-        <h3>BEBIDAS</h3>
-    </section>
 
     <section id="contacto">
 
-        <div class="form-container">
+        <div class="form-container d-flex justify-content-end p-5">
 
-            <div class="form-group">
-                <h4 class="text-lg-center">Contacto</h4>
+            <div class="form-group col-xxl-4 col-xl-6 col-lg-8 col-md-10 col-sm-12 col-xs-12">
+                <h4 class="text-lg-center text-light">Contacto</h4>
 
-                <div class="footer-form">
+                <div class="text-light">
                     <div><label for="nombre">Nombre</label></div>
                     <input type="text" id="nombre" class="form-control" name="nombre"
                         placeholder="Ingrese su nombre completo">
                 </div>
-                <div class="footer-form">
+                <div class="text-light">
                     <div><label for="email">Correo electrónico</label></div>
                     <input type="email" id="email" class="form-control" name="email"
                         placeholder="Ingrese su correo electrónico">
                 </div>
-                <div class="footer-form">
+                <div class="text-light">
                     <div><label for="comentario">Comentario</label></div>
                     <textarea name="comentario" id="comentario" class="form-control" cols="30" rows="10"
                         placeholder="Que hay en su mente en este momento..."></textarea>
                 </div>
-                <div class="footer-form">
+                <div class="text-light pt-2">
                     <input type="submit" name="submit" id="submit-cf" value="Enviar"
                         class="form-control btn btn-primary">
                 </div>
@@ -229,10 +301,5 @@
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 
-    <!-- BOOSTRAP! -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
-
 </html>
