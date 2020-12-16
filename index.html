@@ -20,16 +20,10 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- BOOSTRAP 4 -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- BOOSTRAP! -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -51,7 +45,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-light" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-light" href="#carouselMain">HOME<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#pedir-online">PEDIR ONLINE</a>
@@ -68,7 +63,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#menu-adicionales">ADICIONALES</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#menu-bebidas">BEBIDAS</a>
+                            <a class="dropdown-item" href="#menu-bebidas-postres">BEBIDAS Y POSTRES</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -83,11 +78,11 @@
     </header>
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselMain" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselMain" data-slide-to="1"></li>
+                <li data-target="#carouselMain" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item bg-overlay active" data-bs-interval="5000">
@@ -111,11 +106,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -139,13 +134,13 @@
                     <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
                     <p class="text-center"> 4 Sake maki (salmón)</p>
                 </div>
-                <div class="col col-6 text-center"><img src="./images/menu-combinados/all_salmon.jpg" alt="all-salmon"
+                <div class="col col-6 text-center"><img src="./images/menu/combinados/all_salmon.jpg" alt="all-salmon"
                         class="img-thumbnail text-center" style="width: 300px; margin: auto;">
                 </div>
-    
-    
-                <div class="div col col-6 text-center"><img src="./images/menu-combinados/muramasa.jpg"
-                        alt="muramasa" class="img-thumbnail" style="width: 300px;">
+
+
+                <div class="div col col-6 text-center"><img src="./images/menu/combinados/muramasa.jpg" alt="muramasa"
+                        class="img-thumbnail" style="width: 300px;">
                 </div>
                 <div class="col col-6">
                     <p class="text-center">MURAMASA - 12 piezas</p>
@@ -153,19 +148,20 @@
                     <p class="text-center">4 California (Kanikama, palta y pepino)/p>
                     <p class="text-center">4 New York (salmón y palta)</p>
                 </div>
-    
+
                 <div class="div col-6">
                     <p class="text-center">ONIMARU - 12 piezas</p>
                     <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
                     <p class="text-center">4 New York (salmón y palta)</p>
-                    <p class="text-center">4 Sake kawa (piel de salmón grillada y laqueada en salsa teriyaki, queso crema y
+                    <p class="text-center">4 Sake kawa (piel de salmón grillada y laqueada en salsa teriyaki, queso
+                        crema y
                         pepino</p>
                 </div>
-                <div class="div col-6 text-center"><img src="./images/menu-combinados/onimaru.jpg" alt="onimaru"
+                <div class="div col-6 text-center"><img src="./images/menu/combinados/onimaru.jpg" alt="onimaru"
                         class="img-thumbnail text-center" style="width: 300px;">
                 </div>
-    
-                <div class="div col-6 text-center"><img src="./images/menu-combinados/yokozuna.jpg" alt="yokozuna"
+
+                <div class="div col-6 text-center"><img src="./images/menu/combinados/yokozuna.jpg" alt="yokozuna"
                         class="img-thumbnail" style="width: 300px;">
                 </div>
                 <div class="div col-6">
@@ -179,42 +175,107 @@
                     <p class="text-center">5 Sake maki (salmón)</p>
                     <p class="text-center">4 Hot roll Niku</p>
                 </div>
-    
+
                 <div class="div col-6 p-3">
                     <p class="text-center">VEGETARIANO</p>
                     <p class="text-center">8 Kenkou (Vegetariano: shiitake, palta, zanahoria y pepino)</p>
                     <p class="text-center">4 Kappa maki (pepino)</p>
                     <p class="text-center">Inarizushi ó Agedofu (puede variar sin previo aviso)</p>
                 </div>
-                <div class="div col-6 text-center p-3"><img src="./images/menu-combinados/vegetariano.jpg" alt="vegetariano"
-                        class="img-thumbnail text-center" style="width: 300px;">
+                <div class="div col-6 text-center p-3"><img src="./images/menu/combinados/vegetariano.jpg"
+                        alt="vegetariano" class="img-thumbnail text-center" style="width: 300px;">
                 </div>
-    
-                <div class="div col-6 p-3 text-center"><img src="./images/menu-combinados/hot roll.jpg"
+
+                <div class="div col-6 p-3 text-center"><img src="./images/menu/combinados/hot-roll.jpg" alt="hot-roll"
                         alt="hot-roll" class="img-thumbnail" style="width: 300px;">
                 </div>
                 <div class="div col-6 p-3">
                     <p class="text-center">HOT ROLL</p>
                     <p class="text-center">4 Saku Saku Niku (carne marinada, queso crema, shiitake, tomates y mango
                         rebozados en panko</p>
-                    <p class="text-center">4 Saku Saku EBI (Langostinos cocidos, queso crema y tomates rebozados en panko)
+                    <p class="text-center">4 Saku Saku EBI (Langostinos cocidos, queso crema y tomates rebozados en
+                        panko)
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <section id="menu-obentos">
-        <h3>OBENTOS</h3>
+        <h3 class="text-center">OBENTOS</h3>
+        <div class="container">
+            <div class="row row-cols-2 p-5 align-items-center border-danger">
+                <div class="col col-6">
+                    <p class="text-center">RAFUTE</p>
+                    <p class="text-center">El rafute es una típica comida okinawense, la panceta se cocina lentamente en
+                        una salsa de miso para que quede bien tierna.
+                        Acompañado con arroz, hanjyuku tamago, ensalada , gyoza, tempura okinawense y batatas
+                        caramelizadas. *Los acompasamientos pueden variar sin previo aviso.</p>
+                </div>
+                <div class="col col-6 text-center"><img src="./images/menu/obentos/rafute.jpg" alt="rafute"
+                        class="img-thumbnail text-center" style="width: 300px; margin: auto;">
+                </div>
 
+
+                <div class="div col col-6 text-center"><img src="./images/menu/obentos/yakizakana.jpg" alt="yakizakana"
+                        class="img-thumbnail" style="width: 300px;">
+                </div>
+                <div class="col col-6">
+                    <p class="text-center">YAKIZAKANA</p>
+                    <p class="text-center">Salmón rosado a la plancha con salsa teriyaki, acompañado con arroz,
+                        ensalada , gyoza, poteto sarada, batata caramelizada y tempura okinawense. *Los acompañamientos
+                        pueden variar sin previo aviso</p>
+                </div>
+
+                <div class="div col-6">
+                    <p class="text-center">KARAAGE</p>
+                    <p class="text-center">Trocitos de pollo marinado en salsa de la casa y luego frito.
+                        Acompañado con arroz, ensalada , gyoza, tempura okinawense, batatas caramelizadas y edamame.
+                        *El edamame son vainas de soja hervidas con sal, suelen encontrarse en bares/restaurantes y son
+                        un snack saludable.
+                        Ojo! Solo se come el poroto!</p>
+                </div>
+
+                <div class="div col-6 text-center"><img src="./images/menu/obentos/Karaage.jpg" alt="karaage"
+                        class="img-thumbnail text-center" style="width: 300px;">
+                </div>
+
+                <div class="div col-6 text-center"><img src="./images/menu/obentos/nasu-no-teppanyak.jpg"
+                        alt="nasu-no-teppanyak" class="img-thumbnail" style="width: 300px;">
+                </div>
+                <div class="div col-6">
+                    <p class="text-center">NASU NO TEPPANYAK</p>
+                    <p class="text-center">Berenjena grillada con salsa de la casa</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="menu-adicionales">
-        <h3>ADICIONALES</h3>
+        <h3 class="text-center">ADICIONALES</h3>
+        <div class="container-fluid d-flex flex-row flex-wrap justify-content-center">
+            <span>
+                <img class="d-block" src="./images/menu/adicionales/Adicionales.jpg" alt="adicionales">
+            </span>
+            <span>
+                <img class="d-block" src="./images/menu/adicionales/Adicionales-tabla.jpg" alt="adicionales-tabla">
+            </span>
+        </div>
     </section>
-    <section id="menu-bebidas">
-        <h3>BEBIDAS</h3>
+
+    <section id="menu-bebidas-postres">
+        <h3 class="text-center">BEBIDAS Y POSTRES</h3>
+
+        <div class="container d-flex flex-row flex-wrap justify-content-between">
+            <img class="d-inline w-25" tabindex="0" src="./images/menu/bebidas-postres/alcohol.jpg" alt="alcohol">
+
+            <img class="d-inline w-25" tabindex="1" src="./images/menu/bebidas-postres/bebidas-vinos.jpg" alt="vinos">
+
+            <img class="d-inline w-25" tabindex="2" src="./images/menu/bebidas-postres/bebidas-postres.png" alt="bebidas-postres">
+        </div>
+
     </section>
 
     <section id="contacto">
+        <h1>CONTACTO</h1>
 
         <div class="form-container d-flex justify-content-end p-5">
 
@@ -301,5 +362,13 @@
         <i class="fa fa-whatsapp my-float"></i>
     </a>
 
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- BOOSTRAP! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

@@ -11,6 +11,11 @@
       width: 100%;  
       height: 463px;
     }
+
+    #menu-bebidas-postres img:active{
+        transform: scale(5); 
+       cursor: pointer;
+   }
 }
 
 @media (max-width: 600px) {
@@ -40,11 +45,19 @@ section > h3{
     height: 100vh; 
 } 
 
+#menu-bebidas-postres img:hover{
+   cursor: pointer;
+}
+#menu-bebidas-postres img:active{
+     transform: scale(1.75); 
+    cursor: pointer;
+}
+
 .bg-overlay{
     background: black;
 }
 
-.carousel-item img{
+#carouselMain .carousel-item img{
     opacity: 0.482;
 }
 
@@ -138,7 +151,6 @@ section > h3{
 }
 
 /* -------------------------------------------- POR #ID -------------------------------------------- */
-
 #footer-container{
     background-color:rgb(49, 42, 42);
     color: white;
