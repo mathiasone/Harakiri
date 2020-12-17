@@ -11,11 +11,6 @@
       width: 100%;  
       height: 463px;
     }
-
-    #menu-bebidas-postres img:active{
-        transform: scale(5); 
-       cursor: pointer;
-   }
 }
 
 @media (max-width: 600px) {
@@ -28,6 +23,7 @@
 header, h1{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    padding: 0 5px;
 }
 
 section > h3{
@@ -40,25 +36,17 @@ section > h3{
     font-size: 4rem;
 }
 
+.font-orbitron{
+    font-family: 'Orbitron', sans-serif;
+}
+
 .c-item-custom{
      width: 100%;
     height: 100vh; 
 } 
 
-#menu-bebidas-postres img:hover{
-   cursor: pointer;
-}
-#menu-bebidas-postres img:active{
-     transform: scale(1.75); 
-    cursor: pointer;
-}
-
 .bg-overlay{
     background: black;
-}
-
-#carouselMain .carousel-item img{
-    opacity: 0.482;
 }
 
 .contact-map-container{
@@ -151,6 +139,20 @@ section > h3{
 }
 
 /* -------------------------------------------- POR #ID -------------------------------------------- */
+#carouselMain .carousel-item img{
+    opacity: 0.482;
+}
+
+.bgimg-japon{
+    background-image: url("../images/japon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.99;
+    font-weight: bold;
+}
+
+
+
 #footer-container{
     background-color:rgb(49, 42, 42);
     color: white;
