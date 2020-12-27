@@ -1,0 +1,4 @@
+@mixin mixin-grid($repeat, $gap) {
+    grid-template-columns: repeat($repeat, 1fr);
+    gap: $gap;
+  }

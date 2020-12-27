@@ -1,0 +1,23 @@
+$orbitron: ("Orbitron", sans-serif);
+$nerko-one: ("Nerko One", cursive);
+$verdana: (Verdana, Tahoma, sans-serif);
+$trebuchet-ms: ("Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif);
+
+
+$h1-font: $orbitron;
+$h3-font: $nerko-one;
+$h6-font: $trebuchet-ms;
+$footer-form-font: $verdana;
+$footer-a-font: $trebuchet-ms;
+
+.h1-font{
+    font-family: $h1-font;
+    font-size: 2rem;
+}
+
+.h3-font{
+    font-family: $h3-font;
+    font-size: 4rem;
+}
+
+
