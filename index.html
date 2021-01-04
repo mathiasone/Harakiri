@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Restaurante de comida japonesa premium en Palermo SOHO" />
+    <meta name="autor" content="m.ferreyra1985@gmail.com" />
+    <meta name="keywords" content="sushi, bar, restaurant, harakiri" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Harakiri de una">
+    <meta itemprop="description" content="Restaurante de comida japonesa premium en Palermo SOHO">
+    <meta itemprop="image" content="https://mathiasone.github.io/Harakiri/assets/images/main-cover.jpg">
+
+    <!-- Facebook Meta Tags / Open Graph -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://mathiasone.github.io/Harakiri/assets/images/main-cover.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Harakiri de una">
+    <meta property="og:description" content="Restaurante de comida japonesa premium en Palermo SOHO">
+    <meta property="og:image" content="https://mathiasone.github.io/Harakiri/assets/images/main-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Harakiri de una">
+    <meta name="twitter:description" content="Restaurante de comida japonesa premium en Palermo SOHO">
+    <meta name="twitter:image" content="https://mathiasone.github.io/Harakiri/assets/images/main-cover.jpg">
+
+    <title>Harakiri de una</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- FUENTE ORBITRON -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- FUENTE NERKO ONE -->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- BOOSTRAP 4 -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="fixed-top w-100 d-flex flex-row justify-content-between">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/HarakiriFace_209px50px.png" alt="harakiri-logo">
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#carouselMain">HOME<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#pedir-online">PEDIDOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MENÚ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#menu-combinados">COMBINADOS</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#menu-obentos">OBENTOS</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#menu-adicionales">ADICIONALES</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#menu-bebidas">BEBIDAS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#nosotros">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SOLO EN DESKTOP/NOTEBOOK -->
+        <div id="carouselMain" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselMain" data-slide-to="1"></li>
+                <li data-target="#carouselMain" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item bg-overlay active" data-bs-interval="5000">
+                    <img class="d-block c-item-custom" src="./assets/images/menu-art.jpg" alt="sushi con descipción de la nueva promoción">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="text-lg-center h3-font">PROMO NUEVA WEB</p>
+                        <p class="text-lg-center h1-font">15% OFF durante Diciembre</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-overlay" data-bs-interval="5000">
+                    <img class="d-block c-item-custom" src="./assets/images/main-cover.jpg" alt="Combinado de sushi con la presentación de harakiri">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="text-lg-center h3-font">Calidad garantizada</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-overlay" data-bs-interval="5000">
+                    <img class="d-block c-item-custom" src="./assets/images/main-cover1.jpg" alt="fecha y horario de inauguración">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="text-lg-center h3-font neon">¡ ABRIMOS !</p>
+                        <p class="text-lg-center h1-font">Vení a visitarnos el 22/12/2020 a las 19hs</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- SOLO EN MOBILE -->
+        <div class="bg-overlay d-lg-none">
+            <img class="d-block cm-item-custom" src="./assets/images/main-cover-mobile.jpg" alt="Combinado de sushi con la presentación de harakiri">
+        </div>
+
+    </main>
+
+
+    <section id="pedir-online">
+        <h1 class="h3-font">HACÉ TU PEDIDO</h1>
+        <div class="d-flex flex-row flex-wrap justify-content-around container">
+            <div class="m-5">
+                <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/harakiri-de-una-menu" target="_blank">
+                    <img src="./assets/images/pedidosya-logo.png" alt="logo de pedidos ya">
+                </a>
+            </div>
+            <div class="m-5">
+                <a href="https://api.whatsapp.com/send?phone=5491125148474&text=Hola%20Harakiri de una%21%20Quisiera%20realizar%20un%20pedido."
+                    target="_blank">
+                    <img src="./assets/images/whatsapp-icon-logo.png" alt="logo de whatsapp">
+                </a>
+            </div>
+            <div class="m-5">
+                <a href="https://www.instagram.com/harakirideuna/" target="_blank">
+                    <img src="./assets/images/instagram-new-2016-logo.png" alt="logo de instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="h3-font">MENÚ</h1>
+
+    <section id="menu-combinados">
+        <h3 class="text-center h1-font">COMBINADOS SUSHI</h3>
+        <div class="sushi-grid">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/all_salmon.jpg" alt="all-salmon">
+                        <h6>ALL SALMÓN - 16 piezas</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">4 Nigiri de salmón</p>
+                        <p class="text-center">4 Sashimi de salmón</p>
+                        <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
+                        <p class="text-center"> 4 Sake maki (salmón)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/muramasa.jpg" alt="muramasa">
+                        <h6>MURAMASA - 12 piezas</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">4 Tuna roll (Atún, mayonesa y lechuga)</p>
+                        <p class="text-center">4 California (Kanikama, palta y pepino)/p>
+                        <p class="text-center">4 New York (salmón y palta)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/onimaru.jpg" alt="onimaru">
+                        <h6>ONIMARU - 12 piezas</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
+                        <p class="text-center">4 New York (salmón y palta)</p>
+                        <p class="text-center">4 Sake kawa (piel de salmón grillada y laqueada en salsa
+                            teriyaki,
+                            queso
+                            crema y pepino</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/yokozuna.jpg" alt="yokozuna">
+                        <h6>YOKOZUNA - 32 piezas</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">4 Sashimi de salmón</p>
+                        <p class="text-center">4 Nigiri de salmón</p>
+                        <p class="text-center">4 Nigiri blanco</p>
+                        <p class="text-center">3 Nigiri de langostinos</p>
+                        <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
+                        <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
+                        <p class="text-center">5 Sake maki (salmón)</p>
+                        <p class="text-center">4 Hot roll Niku</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/vegetariano.jpg" alt="vegetariano">
+                        <h6>VEGETARIANO</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">8 Kenkou (Vegetariano: shiitake, palta, zanahoria y pepino)</p>
+                        <p class="text-center">4 Kappa maki (pepino)</p>
+                        <p class="text-center">Inarizushi ó Agedofu (puede variar sin previo aviso)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/combinados/hot-roll.jpg" alt="hot-roll">
+                        <h6>HOT ROLL</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">4 Saku Saku Niku (carne marinada, queso crema, shiitake, tomates
+                            y
+                            mango
+                            rebozados en panko</p>
+                        <p class="text-center">4 Saku Saku EBI (Langostinos cocidos, queso crema y tomates
+                            rebozados
+                            en
+                            panko) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="menu-obentos">
+        <h3 class="text-center h1-font">OBENTOS</h3>
+        <div class="obento-grid">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/obentos/rafute.jpg" alt="rafute">
+                        <h6>RAFUTE</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">El rafute es una típica comida okinawense, la panceta se cocina
+                            lentamente en
+                            una salsa de miso para que quede bien tierna.
+                            Acompañado con arroz, hanjyuku tamago, ensalada , gyoza, tempura okinawense y
+                            batatas
+                            caramelizadas. *Los acompasamientos pueden variar sin previo aviso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/obentos/yakizakana.jpg" alt="yakizakana">
+                        <h6>YAKIZAKANA</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">Salmón rosado a la plancha con salsa teriyaki, acompañado con
+                            arroz,
+                            ensalada , gyoza, poteto sarada, batata caramelizada y tempura okinawense. *Los
+                            acompañamientos
+                            pueden variar sin previo aviso</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/obentos/Karaage.jpg" alt="karaage">
+                        <h6>KARAAGE</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">Trocitos de pollo marinado en salsa de la casa y luego frito.
+                            Acompañado con arroz, ensalada , gyoza, tempura okinawense, batatas caramelizadas y
+                            edamame.
+                            *El edamame son vainas de soja hervidas con sal, suelen encontrarse en
+                            bares/restaurantes y
+                            son
+                            un snack saludable.
+                            Ojo! Solo se come el poroto!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/images/menu/obentos/nasu-no-teppanyak.jpg" alt="nasu-no-teppanyak">
+                        <h6>NASU NO TEPPANYAK</h6>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text-center">Berenjena grillada con salsa de la casa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="menu-adicionales">
+        <h3 class="text-center h1-font">ADICIONALES</h3>
+        <div class="adicional-grid">
+
+            <div class="card text-center">
+                <div class="card-header">MISOSHIRU</div>
+                <div class="card-body">
+                    <p class="card-text">Sopa de miso con algas wakame y tofu</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">IKA FURAI</div>
+                <div class="card-body">
+                    <p class="card-text">Aros de calamar rebozados en panko</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">EBI FURAI</div>
+                <div class="card-body">
+                    <p class="card-text">Langostinos rebozados en panko</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">NIKUMAN CLÁSICO</div>
+                <div class="card-body">
+                    <p class="card-text">Panecillo al vapor con relleno de cerdo, shiitake y nira</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">NIKUMAN RAFUTE</div>
+                <div class="card-body">
+                    <p class="card-text">Panecillo al vapor con relleno de panceta tiernizada en salsa de miso</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">GYOZA CERDO</div>
+                <div class="card-body">
+                    <p class="card-text">Empanaditas grilladas de cerdo, repollo y nira</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">GYOZA LANGOSTINO</div>
+                <div class="card-body">
+                    <p class="card-text">Empanaditas grilladas de langostino, cerdo, repollo y nira</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">CONDIMENTOS</div>
+                <div class="card-body">
+                    <p class="card-text"> Wasabi, Salsa de soja, Gari, Salsa teriyaki</p>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-header">POSTRE: BANDEJA DE OKASHI</div>
+                <div class="card-body">
+                    <p class="card-text"> Bandeja de Okashi</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="menu-bebidas">
+        <h3 class="text-center h1-font">BEBIDAS</h3>
+
+    </section>
+
+    <section id="nosotros">
+        <h1>NOSOTROS</h1>
+        <div class="container">
+            <p class="text-center p-5">QUIÉNES SOMOS 腹切り・でうなについて</p>
+            <p class="p-5"> Somos un restaurante de comida japonesa fundado por tres emprendedores Argentinos el 9
+                de
+                Julio del 2020
+                en Palermo, Ciudad de Buenos Aires. Ofreciendo, siempre, máxima calidad de productos y atención a
+                nuestros clientes y todos aquellos que quieran conocernos.
+                Nos especializamos, en comida Japonesa y Okinawense. Contamos con un equipo de cocina nikkei de gran
+                experiencia y profesionalismo, e innovación continua (Kaizen).</p>
+
+
+            <p class="p-5">Acerca del servicio サービスについて</p>
+
+            <p> Los platos se elaboran en el momento de realizado el pedido, por ello recomendamos solicitarlos con
+                la
+                suficiente anticipación. Todas las compras de sushi incluyen wasabi y shoyu.</p>
+            <p> 20% de descuento en TAKE AWAY y 10% en DELI propio.</p>
+            <p> Los pedidos, por el momento, se toman únicamente por WhatsApp. Puede hacerlo directamente con el
+                botón
+                "WhatsApp" del sitio web.</p>
+            <p> Le sugerimos revisar los platos, ofertas y promociones en nuestro Instagram. Puede ingresar con el
+                botón
+                "Carta" del sitio web o mediante el Link: https://www.instagram.com/harakirideuna</p>
+            <p> El menú es amplio, pero si tiene alguna duda acerca de alternativas vegetarianas y apto celiacos.
+                Por
+                favor, consúltenos previamente.</p>
+            <p> El pedido mínimo es de $500.</p>
+            <p> Se intenta mantener los precios de los platos actualizados en el sitio web pero podrán llegar
+                variar,
+                sin previo aviso. Por favor, si tiene alguna duda consulte previamente. </p>
+            <p> Esperamos poder conocerlo.</p>
+            <p> Gracias,</p>
+            <p> どうもありがとうございます。</p>
+        </div>
+
+    </section>
+
+
+    <section id="contacto">
+
+        <h1>CONTACTO</h1>
+
+        <div class="form-container d-flex p-5">
+
+            <div class="form-group col-xxl-4 col-xl-4 col-lg-4 col-md-10 col-sm-10 col-xs-12">
+                <h4 class="text-lg-center text-light">Contacto</h4>
+
+                <div class="text-light">
+                    <div><label for="nombre">Nombre</label></div>
+                    <input type="text" id="nombre" class="form-control" name="nombre"
+                        placeholder="Ingrese su nombre completo">
+                </div>
+                <div class="text-light">
+                    <div><label for="email">Correo electrónico</label></div>
+                    <input type="email" id="email" class="form-control" name="email"
+                        placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="text-light">
+                    <div><label for="comentario">Comentario</label></div>
+                    <textarea name="comentario" id="comentario" class="form-control" cols="30" rows="10"
+                        placeholder="Que hay en su mente en este momento..."></textarea>
+                </div>
+                <div class="text-light pt-2">
+                    <input type="submit" name="submit" id="submit-cf" value="Enviar"
+                        class="form-control btn btn-primary">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-map-container">
+            <div class="contact-map">
+                <h4>¿Dónde estamos?</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.539512951876!2d-58.430113784175326!3d-34.59051656430796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e734a979b7%3A0xe736cc745580ee4b!2zSGFyYWtpcmkgZGUgVW5hIOiFueWIh-OCiuODu-OBp-OBhuOBqg!5e0!3m2!1sen!2sar!4v1605988621111!5m2!1sen!2sar"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contact-map-datos">
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Lunes: Cerrado </span>
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Martes a sábados: 18:00-23:00 </span>
+                <span><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> Domingos: las 24 horas </span>
+
+                <span><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i> Honduras 4756, Palermo SOHO </span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-2514-8474</span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-5428-9023</span>
+                <span><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> 011 15-5864-9116</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer id="footer-container">
+        <div class="footer-social">
+            <h4>Nuestras redes sociales</h4>
+            <a href="https://www.facebook.com/Harakiri-de-una-280038192635243/"><i
+                    class="fa fa-facebook-square fa-2x face-icon" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/harakirideuna/" target="_blank"><i
+                    class="fa fa-instagram fa-2x insta-icon" aria-hidden="true"></i> </a>
+            <a href="https://www.youtube.com/watch?v=n_PCwqChRIk&ab_channel=HarakiriDeUna" target="_blank"><i
+                    class="fa fa-youtube fa-2x youtu-icon" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="footer-options">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#acercade">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="#">¿ Quiénes somos ?</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-derechos">
+            <p>Derechos reservados 2020 </p>
+        </div>
+    </footer>
+
+
+    <!-- WHATSAPP! -->
+    <a href="https://api.whatsapp.com/send?phone=5491125148474&text=Hola%20Harakiri de una%21%20Quisiera%20realizar%20un%20pedido."
+        class="float d-none d-lg-block" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- BOOSTRAP! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

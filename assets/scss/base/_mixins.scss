@@ -1,0 +1,19 @@
+@mixin mixin-grid($repeat, $gap) {
+    grid-template-columns: repeat($repeat, 1fr);
+    gap: $gap;
+  }
+
+@mixin mixin-bf-visibility($visibility) {
+  -moz-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  backface-visibility: $visibility;
+}
+
+@mixin mixin-transform($trnsfrm) {
+  -moz-transform: $trnsfrm;
+  -o-transform: $trnsfrm;
+  -ms-transform: $trnsfrm;
+  -webkit-transform: $trnsfrm;
+  transform: $trnsfrm;
+}    

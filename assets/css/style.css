@@ -1,0 +1,319 @@
+/* xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+/* COLORS */
+/* BACKGROUND COLOR*/
+#footer-container, .menu-container, .contact-map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.obento-grid, .sushi-grid {
+  display: grid;
+  grid-area: 1/1;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.h1-font {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+}
+
+.h3-font {
+  font-family: "Nerko One", cursive;
+  font-size: 4rem;
+}
+
+.neon {
+  color: #8f21f5;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #f613eb, 0 0 15px #49ff18, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  letter-spacing: 3px;
+}
+
+header, h1 {
+  background: linear-gradient(90deg, white 0%, black 100%);
+  padding: 0 5px;
+}
+
+.cm-item-custom {
+  width: 100%;
+  height: 40vh;
+}
+
+section > h3 {
+  background: linear-gradient(90deg, #06bf09 0%, #9ef198 50%, #ec9a0a 100%);
+  margin: 1rem 0;
+}
+
+/* <section id="pedir-online">  --->  */
+#pedir-online img {
+  width: 150px;
+  height: 150px;
+}
+@media only screen and (max-width: 991px) {
+  #pedir-online img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #pedir-online img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+/*  <---  <section id="contacto"> */
+/* <section id="contacto">  --->  */
+.form-container {
+  background-image: url("../images/email-concept.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .form-container {
+    justify-content: center;
+  }
+}
+
+.contact-map-container {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  padding: 2em 0;
+}
+
+.contact-map {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.contact-map iframe {
+  width: 60vw;
+  height: 60vh;
+  margin-left: 1vw;
+}
+
+.contact-map-datos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+/*  <---  <section id="contacto"> */
+/* <section MENU  --->  */
+h6 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.sushi-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media only screen and (max-width: 991px) {
+  .sushi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sushi-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+.obento-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media only screen and (max-width: 991px) {
+  .obento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .obento-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+.adicional-grid {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-area: 1/1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media only screen and (max-width: 991px) {
+  .adicional-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .adicional-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* FLIP CARD BEGIN */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 340px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  justify-self: center;
+}
+
+.flip-card-front > img {
+  width: 300px;
+  height: 300px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: darkred;
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  font-family: cursive;
+}
+
+/* FLIP CARD END */
+/*  <---  MENU */
+.footer-social {
+  text-align: center;
+}
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-options li {
+  list-style: none;
+  text-align: center;
+}
+
+#footer-container {
+  background-color: #312a2a;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 1em;
+}
+
+#footer-container a {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.fa-map-marker {
+  color: darkred;
+}
+
+.fa-phone-square {
+  color: green;
+}
+
+.fa-clock-o {
+  color: darkblue;
+}
+
+.c-item-custom {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-overlay {
+  background: lightgrey;
+}
+
+#carouselMain .carousel-item img {
+  opacity: 0.9;
+}
+
+/* WHATSAPP BUTTON BEGIN */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 15px;
+}
+
+/* WHATSAPP BUTTON END */
+/* ------------------------------------------------ GLOBAL ------------------------------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

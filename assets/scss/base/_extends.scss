@@ -1,0 +1,11 @@
+%flex-wrap-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+%grid-area-autorows{
+    display: grid;
+    grid-area: 1 / 1;
+    grid-auto-rows: minmax(100px, auto);
+}    
