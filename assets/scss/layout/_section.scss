@@ -1,6 +1,5 @@
 section > h3 {
-    background: linear-gradient(90deg, #06bf09 0%, #9ef198 50%, #ec9a0a 100%);
-    margin: 1rem 0;    
+    margin-bottom: 1rem;    
 }
 
 /* <section id="pedir-online">  --->  */
@@ -168,6 +167,11 @@ h6{
 /* Style the back side */
 .flip-card-back {
     background: $bg-menu-cards;
+    color: $text-menu-cards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include mixin-transform(rotateY(180deg));
 }
 
