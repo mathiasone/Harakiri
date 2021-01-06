@@ -16,6 +16,10 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
   grid-auto-rows: minmax(100px, auto);
 }
 
+.font-size-2rem {
+  font-size: 2rem;
+}
+
 .h1-font {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
@@ -47,21 +51,30 @@ section > h3 {
 }
 
 /* <section id="pedir-online">  --->  */
+#pedir-online {
+  background-image: url("../images/da5p_y27g_181002.jpg");
+  background-size: cover;
+}
 #pedir-online img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 @media only screen and (max-width: 991px) {
-  #pedir-online img {
-    width: 100px;
-    height: 100px;
-  }
-}
-@media only screen and (max-width: 768px) {
   #pedir-online img {
     width: 75px;
     height: 75px;
   }
+}
+@media only screen and (max-width: 768px) {
+  #pedir-online img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#nosotros img {
+  width: 400px;
+  height: 400px;
 }
 
 /*  <---  <section id="contacto"> */
