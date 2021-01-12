@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -48,8 +48,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+    <!-- SLIDER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
@@ -132,11 +137,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+            <a class="carousel-control-prev carousel-botones" href="#carouselMain" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+            <a class="carousel-control-next carousel-botones" href="#carouselMain" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -150,39 +155,53 @@
     </main>
 
 
-    <section id="pedir-online">
+    <section id="pedir-online" class="bg-light">
         <h1 class="h1-font bg-primary">HACÉ TU PEDIDO</h1>
         <div class="d-flex flex-row flex-wrap justify-content-around container">
-            <div class="m-5">
-                <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/harakiri-de-una-menu" target="_blank">
-                    <img src="./assets/images/pedidosya-logo.png" alt="logo de pedidos ya">
-                </a>
+
+            <div class="card shadow my-5 rounded">
+                <img class="card-img-top mx-auto my-1" src="./assets/images/pedidosya-logo.png" alt="logo de pedidos ya">
+                <div class="card-body text-center">
+                <h5 class="card-title">PedidosYa</h5>
+                <p class="card-text">Realiza tu pedido desde la app aprovechando todos sus beneficios y promociones.</p>
+                <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/harakiri-de-una-menu" target="_blank" class="btn btn-primary">Hacer pedido</a>
+                </div>
             </div>
-            <div class="m-5">
+
+            <div class="card shadow my-5 rounded">
+                <img class="card-img-top mx-auto my-1" src="./assets/images/whatsapp-icon-logo.png" alt="logo de whatsapp">
+                <div class="card-body text-center">
+                <h5 class="card-title">Whatsapp</h5>
+                <p class="card-text">Realiza tu pedido directamente por mensaje o audio, también podés despejar cualquier consulta por este medio.</p>
                 <a href="https://api.whatsapp.com/send?phone=5491125148474&text=Hola%20Harakiri de una%21%20Quisiera%20realizar%20un%20pedido."
-                    target="_blank">
-                    <img src="./assets/images/whatsapp-icon-logo.png" alt="logo de whatsapp">
-                </a>
+                target="_blank" class="btn btn-primary">Hacer pedido</a>
+                </div>
             </div>
-            <div class="m-5">
-                <a href="https://www.instagram.com/harakirideuna/" target="_blank">
-                    <img src="./assets/images/instagram-new-2016-logo.png" alt="logo de instagram">
-                </a>
-            </div>
-        </div>
+
+            <div class="card shadow my-5 rounded">
+                <img class="card-img-top mx-auto my-1" src="./assets/images/instagram-new-2016-logo.png" alt="logo de instagram">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text">Siempre vas a encontrar el menú actualizado para descargar además de ver todas nuestras novedades, seguinos!</p>
+                    <a href="https://www.instagram.com/harakirideuna/" target="_blank" class="btn btn-primary">Hacer pedido</a>
+                </div>
+            </div> 
+        </div>    
+        
     </section>
 
     <h1 class="h1-font bg-primary">MENÚ</h1>
 
-    <section id="menu-combinados">
+    <section id="menu-combinados" class="bg-light">
         <h3 class="text-center h3-font">COMBINADOS SUSHI</h3>
         <div class="sushi-grid container">
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/all_salmon.jpg" alt="all-salmon">
                         <h6>ALL SALMÓN - 16 piezas</h6>
+                        
                     </div>
                     <div class="flip-card-back">
                         <p class="text-center">4 Nigiri de salmón</p>
@@ -193,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/muramasa.jpg" alt="muramasa">
@@ -207,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/onimaru.jpg" alt="onimaru">
@@ -224,7 +243,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/yokozuna.jpg" alt="yokozuna">
@@ -243,7 +262,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/vegetariano.jpg" alt="vegetariano">
@@ -257,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/combinados/hot-roll.jpg" alt="hot-roll">
@@ -279,11 +298,11 @@
 
     </section>
 
-    <section id="menu-obentos">
-        <h3 class="text-center h3-font">OBENTOS</h3>
+    <section id="menu-obentos" class="bg-light">
+        <h3 class="text-center h3-font py-3">OBENTOS</h3>
         <div class="obento-grid">
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/obentos/rafute.jpg" alt="rafute">
@@ -300,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/obentos/yakizakana.jpg" alt="yakizakana">
@@ -316,7 +335,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/obentos/Karaage.jpg" alt="karaage">
@@ -335,7 +354,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card shadow my-3 ">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./assets/images/menu/obentos/nasu-no-teppanyak.jpg" alt="nasu-no-teppanyak">
@@ -351,8 +370,8 @@
     </section>
 
 
-    <section id="menu-adicionales">
-        <h3 class="text-center h3-font">ADICIONALES</h3>
+    <section id="menu-adicionales" class="bg-light">
+        <h3 class="text-center h3-font py-5">ADICIONALES</h3>
         <div class="adicional-grid container-fluid">
 
             <div class="card text-center">
@@ -422,8 +441,129 @@
 
     </section>
 
-    <section id="menu-bebidas">
-        <h3 class="text-center h3-font">BEBIDAS</h3>
+    <section id="menu-bebidas" class="bg-light">
+        <h3 class="text-center h3-font py-5">BEBIDAS</h3>
+
+        <div class="contenedor container pb-5">
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="carousel__lista bg-white">
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/2.jpg" alt="Agua y gaseosas">
+                            <!-- <p>Rock and Roll Hall of Fame</p> -->
+                            <h5 class="card-title mt-3">AGUA MINERAL Y GASEOSAS</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Agua mineral Con gas 500ml</li>
+                                <li class="list-group-item">Agua mineral Sin gas 500ml</li>
+                                <li class="list-group-item">Coca Cola 354ml</li>
+                                <li class="list-group-item">Sprite 354ml</li>
+                                <li class="list-group-item">Fanta 354ml</li>
+                            </ul>
+                            
+                        </div>
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/3.jpg" alt="CERVEZA">
+                            <h5 class="card-title mt-3">CERVEZA</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Orion 350ml</li>
+                                <li class="list-group-item">Sapporo 355ml</li>
+                                <li class="list-group-item">Heineken 354ml</li>
+                                <li class="list-group-item">Heineken 473ml</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/4.jpg" alt="Sparking wine">
+                            <h5 class="card-title mt-3">SPARKLING WINE</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Mumm cuvee reserve extra brut</li>
+                                <li class="list-group-item">Chandon extra brut</li>
+                                <li class="list-group-item">Chandon délice</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/5.jpg" alt="cocktails">
+                            <h5 class="card-title mt-3">COCKTAILS</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Caipiroska de maracuya</li>
+                                <li class="list-group-item">Aperol spritz</li>
+                                <li class="list-group-item">Gintonic con pepino y anís estrellado</li>
+                                <li class="list-group-item">Gintonic con pomelo y  romero</li>
+                            </ul>
+                        </div>
+        
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/6.jpg" alt="Bebidas frutales con alcohol">
+                            <h5 class="card-title mt-3">BEBIDAS FRUTALES CON ALCOHOL</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Ichigo aperol spritz/sparkling</li>
+                                <li class="list-group-item">Maracuya aperol spritz/sparkling</li>
+                                <li class="list-group-item">Litchi aperol spritz/sparkling wine</li>
+                                <li class="list-group-item">Longan aperol spritz/sparkling wine</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/7.jpg" alt="Bebidas frutales sin alcohol">
+                            <h5 class="card-title mt-3">BEBIDAS FRUTALES SIN ALCOHOL</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Orion 350ml</li>
+                                <li class="list-group-item">Sapporo 355ml</li>
+                                <li class="list-group-item">Heineken 354ml</li>
+                                <li class="list-group-item">Heineken 473ml</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/9.jpg" alt="Constitution Square - Tower I">
+                            <h5 class="card-title mt-3">EXTRAS</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Nieto senetiner extra brut</li>
+                                <li class="list-group-item">Nieto senetiner chardonnay</li>
+                                <li class="list-group-item">Baron B extra brut </li>
+                                <li class="list-group-item">Baron B brut nature</li>
+                                <li class="list-group-item">Baron B Rosé</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/10.png" alt="Constitution Square - Tower I">
+                            <h5 class="card-title mt-3">EXTRAS 2</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Catena Zapata nicasia red blend</li>
+                                <li class="list-group-item">Catena Zapata cabernet malbec</li>
+                                <li class="list-group-item">Rutini cabernet malbec</li>
+                                <li class="list-group-item">Rutini chardonnay</li>
+                                <li class="list-group-item">Norton cosecha tardía blanco dulce</li>
+                            </ul>
+                        </div>
+
+                        <div class="carousel__elemento border">
+                            <img src="./assets/images/slider/11.jpg" alt="Constitution Square - Tower I">
+                            <h5 class="card-title mt-3">EXTRAS 3</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Santa Julia Rosé</li>
+                                <li class="list-group-item">Santa Julia chenin dulce</li>
+                                <li class="list-group-item">Lagarde malbec</li>
+                                <li class="list-group-item">Lagarde Rosé</li>
+                            </ul>
+                        </div>
+
+                    </div>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+        </div>
 
     </section>
 
@@ -433,10 +573,10 @@
             <p class="text-center p-2 font-size-2rem">QUIÉNES SOMOS 腹切り・でうなについて</p>
             
                 <div class="row align-items-center">
-                    <div class="col-lg-6 p-2 text-center">
+                    <div class="col-lg-4 py-4 text-center border border-top-0 border-left-0 border-bottom-0">
                         <img src="./assets/images/nosotros.jpg" alt="foto del equipo de Harakiri de una">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <p> Somos un restaurante de comida japonesa fundado por tres emprendedores Argentinos el 9
                             de Julio del 2020 en Palermo, Ciudad de Buenos Aires. 
                         </p>    
@@ -451,10 +591,7 @@
                     </div>
                 </div>    
             
-        </div>
-
-        <div class="container card bg-light my-4">   
-            <p class="text-center p-1 font-size-2rem text-uppercase">Acerca del servicio サービスについて</p>
+            <p class="text-center p-1 font-size-2rem text-uppercase mt-5">Acerca del servicio サービスについて</p>
 
             <p> Los platos se elaboran en el momento de realizado el pedido, por ello recomendamos solicitarlos con
                 la
@@ -575,9 +712,13 @@
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- BOOSTRAP! -->
+    <!-- BOOSTRAP 4! -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/app.js"></script>
        
 </body>
 </html>

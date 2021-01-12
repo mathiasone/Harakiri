@@ -51,9 +51,14 @@ section > h3 {
 }
 
 /* <section id="pedir-online">  --->  */
-#pedir-online {
-  background-image: url("../images/da5p_y27g_181002.jpg");
-  background-size: cover;
+#pedir-online .card {
+  width: 18rem;
+  height: 20rem;
+}
+#pedir-online .btn {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
 }
 #pedir-online img {
   width: 100px;
@@ -75,6 +80,18 @@ section > h3 {
 #nosotros img {
   width: 400px;
   height: 400px;
+}
+@media only screen and (max-width: 991px) {
+  #nosotros img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #nosotros img {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /*  <---  <section id="contacto"> */
@@ -305,6 +322,20 @@ h6 {
   opacity: 0.9;
 }
 
+.carousel-caption {
+  margin: 0px;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  text-align: center;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
 /* WHATSAPP BUTTON BEGIN */
 .float {
   position: fixed;
@@ -326,6 +357,82 @@ h6 {
 }
 
 /* WHATSAPP BUTTON END */
+/* --- --- CAROUSEL BEBIDAS--- --- */
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: black;
+  opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+}
+
+.carousel__siguiente {
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+.carousel__elemento img {
+  width: 550px;
+  height: 310px;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: black;
+  opacity: 0.2;
+  border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 40px 0;
+  }
+
+  .contenido-principal {
+    flex-direction: column;
+  }
+
+  .contenido-principal > * {
+    width: 100%;
+  }
+}
 /* ------------------------------------------------ GLOBAL ------------------------------------------------ */
 * {
   padding: 0;

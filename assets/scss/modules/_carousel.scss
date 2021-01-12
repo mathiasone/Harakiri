@@ -10,3 +10,18 @@
 #carouselMain .carousel-item img{
     opacity: 0.9;
 }
+
+.carousel-caption{
+    margin: 0px;
+    display: inline;
+    background-color: rgba(0, 0, 0, .6);
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    text-align: center;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
