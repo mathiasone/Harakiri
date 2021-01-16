@@ -1,23 +1,54 @@
 section > h3 {
-    background: linear-gradient(90deg, #06bf09 0%, #9ef198 50%, #ec9a0a 100%);
-    margin: 1rem 0;    
+    margin-bottom: 1rem;    
 }
 
 /* <section id="pedir-online">  --->  */
-#pedir-online img{
-    width: 150px;
-    height: 150px;
-       
-    @media only screen and (max-width: $width-sm) {
-        width: 100px;
-        height: 100px;
+#pedir-online{
+    .card{
+        width: 18rem; 
+        height: 20rem;
     }
 
-    @media only screen and (max-width: $width-xs) {
-        width: 75px;
-        height: 75px;
+    .btn{
+        position: absolute;
+        bottom: 10px;
+        left: 30%;
+    }
+
+    
+    img{
+        width: 100px;
+        height: 100px;
+            
+        @media only screen and (max-width: $width-sm) {
+            width: 75px;
+            height: 75px;
+        }
+
+        @media only screen and (max-width: $width-xs) {
+            width: 50px;
+            height: 50px;
+        }
+    }    
+}
+
+#nosotros{
+    img{
+        width: 400px;
+        height: 400px;
+
+        @media only screen and (max-width: $width-sm) {
+            width: 350px;
+            height: 350px;
+        }
+
+        @media only screen and (max-width: $width-xs) {
+            width: 300px;
+            height: 300px;
+        }
     }
 }
+
 /*  <---  <section id="contacto"> */
 
 /* <section id="contacto">  --->  */
@@ -72,6 +103,7 @@ h6{
 
 .menu-container{
     @extend %flex-wrap-center;
+
 }
 
 .sushi-grid{ 
@@ -167,8 +199,12 @@ h6{
   
 /* Style the back side */
 .flip-card-back {
-    background: #06bf09;
-    background: linear-gradient(90deg, #06bf09 0%, #9ef198 50%, #ec9a0a 100%);
+    background: $bg-menu-cards;
+    color: $text-menu-cards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include mixin-transform(rotateY(180deg));
 }
 
