@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* xs (for phones - screens less than 768px wide)
 sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
@@ -20,14 +21,39 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
   font-size: 2rem;
 }
 
+/* Título de las secciones*/
 .h1-font {
-  font-family: "Orbitron", sans-serif;
-  font-size: 2rem;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 3rem;
+  padding-top: 1rem;
+  background: #c20808;
 }
 
 .h3-font {
   font-family: "Nerko One", cursive;
   font-size: 4rem;
+}
+
+.h3-font-small {
+  font-family: "Nerko One", cursive;
+  font-size: 2rem;
+}
+
+.h4-font {
+  font-family: "Long Cang", cursive;
+  font-size: 5rem;
+}
+
+/* Titulo flip card MENU */
+h6 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+.nosotros-font {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 2rem;
 }
 
 .neon {
@@ -48,6 +74,20 @@ header, h1 {
 
 section > h3 {
   margin-bottom: 1rem;
+}
+
+section > h1 {
+  padding-left: 2rem;
+}
+
+.btn-color {
+  background: #c20808;
+  color: lightgrey;
+}
+
+.h4-border-x {
+  border-top: 5px solid #c20808;
+  border-bottom: 5px solid #c20808;
 }
 
 /* <section id="pedir-online">  --->  */
@@ -139,11 +179,6 @@ section > h3 {
 
 /*  <---  <section id="contacto"> */
 /* <section MENU  --->  */
-h6 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 1rem;
-}
-
 .sushi-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -162,8 +197,8 @@ h6 {
 }
 
 .obento-grid {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 @media only screen and (max-width: 991px) {
   .obento-grid {
@@ -263,10 +298,13 @@ h6 {
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  background-color: white;
+  color: black;
 }
 
 .flip-card-back p {
-  font-family: cursive;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 20px;
 }
 
 /* FLIP CARD END */

@@ -39,6 +39,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- FUENTE NERKO ONE -->
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- FUENTE Long Cang -->
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <!-- FUENTE Long Cang -->
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -68,13 +72,13 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-dark" href="#carouselMain">HOME<span
+                        <a class="nav-link text-dark" href="#carouselMainSection">HOME<span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -107,7 +111,7 @@
     </header>
 
     <main>
-
+        <div id="carouselMainSection"></div>
         <!-- SOLO EN DESKTOP/NOTEBOOK -->
         <div id="carouselMain" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -120,7 +124,7 @@
                     <img class="d-block c-item-custom" src="./assets/images/menu-art.jpg" alt="sushi con descipción de la nueva promoción">
                     <div class="carousel-caption d-none d-md-block">
                         <p class="text-lg-center h3-font">PROMO NUEVA WEB</p>
-                        <p class="text-lg-center h1-font">15% OFF durante Diciembre</p>
+                        <p class="text-lg-center h3-font-small">15% OFF durante Diciembre</p>
                     </div>
                 </div>
                 <div class="carousel-item bg-overlay" data-bs-interval="5000">
@@ -132,8 +136,8 @@
                 <div class="carousel-item bg-overlay" data-bs-interval="5000">
                     <img class="d-block c-item-custom" src="./assets/images/main-cover1.jpg" alt="fecha y horario de inauguración">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="text-lg-center h3-font neon">¡ ABRIMOS !</p>
-                        <p class="text-lg-center h1-font">Vení a visitarnos el 22/12/2020 a las 19hs</p>
+                        <p class="text-lg-center h3-font">¡ ABRIMOS !</p>
+                        <p class="text-lg-center h3-font-small">Vení a visitarnos el 22/12/2020 a las 19hs</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +160,7 @@
 
 
     <section id="pedir-online" class="bg-light">
-        <h1 class="h1-font bg-primary">HACÉ TU PEDIDO</h1>
+        <h1 class="h1-font">HACÉ TU PEDIDO </h1>
         <div class="d-flex flex-row flex-wrap justify-content-around container">
 
             <div class="card shadow my-5 rounded">
@@ -164,7 +168,7 @@
                 <div class="card-body text-center">
                 <h5 class="card-title">PedidosYa</h5>
                 <p class="card-text">Realiza tu pedido desde la app aprovechando todos sus beneficios y promociones.</p>
-                <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/harakiri-de-una-menu" target="_blank" class="btn btn-primary">Hacer pedido</a>
+                <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/harakiri-de-una-menu" target="_blank" class="btn btn-color">Hacer pedido</a>
                 </div>
             </div>
 
@@ -174,7 +178,7 @@
                 <h5 class="card-title">Whatsapp</h5>
                 <p class="card-text">Realiza tu pedido directamente por mensaje o audio, también podés despejar cualquier consulta por este medio.</p>
                 <a href="https://api.whatsapp.com/send?phone=5491125148474&text=Hola%20Harakiri de una%21%20Quisiera%20realizar%20un%20pedido."
-                target="_blank" class="btn btn-primary">Hacer pedido</a>
+                target="_blank" class="btn btn-color">Hacer pedido</a>
                 </div>
             </div>
 
@@ -183,17 +187,18 @@
                 <div class="card-body text-center">
                     <h5 class="card-title">Instagram</h5>
                     <p class="card-text">Siempre vas a encontrar el menú actualizado para descargar además de ver todas nuestras novedades, seguinos!</p>
-                    <a href="https://www.instagram.com/harakirideuna/" target="_blank" class="btn btn-primary">Hacer pedido</a>
+                    <a href="https://www.instagram.com/harakirideuna/" target="_blank" class="btn btn-color">Hacer pedido</a>
                 </div>
             </div> 
         </div>    
         
     </section>
 
-    <h1 class="h1-font bg-primary">MENÚ</h1>
-
     <section id="menu-combinados" class="bg-light">
-        <h3 class="text-center h3-font">COMBINADOS SUSHI</h3>
+        <h1 class="h1-font">MENÚ</h1>
+        <h4 class="text-center h4-font py-5"> 
+            <span class="h4-border-x">COMBINADOS SUSHI</span> 
+        </h4>
         <div class="sushi-grid container">
 
             <div class="flip-card shadow my-3">
@@ -251,11 +256,9 @@
                     </div>
                     <div class="flip-card-back">
                         <p class="text-center">4 Sashimi de salmón</p>
-                        <p class="text-center">4 Nigiri de salmón</p>
-                        <p class="text-center">4 Nigiri blanco</p>
-                        <p class="text-center">3 Nigiri de langostinos</p>
-                        <p class="text-center">4 Philadelphia roll (salmón y queso crema)</p>
-                        <p class="text-center">4 Boston (salmón cocido y queso crema)</p>
+                        <p class="text-center">Nigiri: 4 de salmón, 3 blancos y 3 de langostinos</p>
+                        <p class="text-center">4 Philadelphia roll</p>
+                        <p class="text-center">4 Boston</p>
                         <p class="text-center">5 Sake maki (salmón)</p>
                         <p class="text-center">4 Hot roll Niku</p>
                     </div>
@@ -299,7 +302,9 @@
     </section>
 
     <section id="menu-obentos" class="bg-light">
-        <h3 class="text-center h3-font py-3">OBENTOS</h3>
+        <h4 class="text-center h4-font py-5"> 
+            <span class="h4-border-x">OBENTOS</span> 
+        </h4>
         <div class="obento-grid">
 
             <div class="flip-card shadow my-3">
@@ -371,67 +376,69 @@
 
 
     <section id="menu-adicionales" class="bg-light">
-        <h3 class="text-center h3-font py-5">ADICIONALES</h3>
+        <h4 class="text-center h4-font py-5"> 
+            <span class="h4-border-x">ADICIONALES</span> 
+        </h4>
         <div class="adicional-grid container-fluid">
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">MISOSHIRU</div>
+                <div class="card-header bg-dark text-light">MISOSHIRU</div>
                 <div class="card-body">
                     <p class="card-text">Sopa de miso con algas wakame y tofu</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">IKA FURAI</div>
+                <div class="card-header bg-dark text-light">IKA FURAI</div>
                 <div class="card-body">
                     <p class="card-text">Aros de calamar rebozados en panko</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">EBI FURAI</div>
+                <div class="card-header bg-dark text-light">EBI FURAI</div>
                 <div class="card-body">
                     <p class="card-text">Langostinos rebozados en panko</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">NIKUMAN CLÁSICO</div>
+                <div class="card-header bg-dark text-light">NIKUMAN CLÁSICO</div>
                 <div class="card-body">
                     <p class="card-text">Panecillo al vapor con relleno de cerdo, shiitake y nira</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">NIKUMAN RAFUTE</div>
+                <div class="card-header bg-dark text-light">NIKUMAN RAFUTE</div>
                 <div class="card-body">
                     <p class="card-text">Panecillo al vapor con relleno de panceta tiernizada en salsa de miso</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">GYOZA CERDO</div>
+                <div class="card-header bg-dark text-light">GYOZA CERDO</div>
                 <div class="card-body">
                     <p class="card-text">Empanaditas grilladas de cerdo, repollo y nira</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">GYOZA LANGOSTINO</div>
+                <div class="card-header bg-dark text-light">GYOZA LANGOSTINO</div>
                 <div class="card-body">
                     <p class="card-text">Empanaditas grilladas de langostino, cerdo, repollo y nira</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">CONDIMENTOS</div>
+                <div class="card-header bg-dark text-light">CONDIMENTOS</div>
                 <div class="card-body">
                     <p class="card-text"> Wasabi, Salsa de soja, Gari, Salsa teriyaki</p>
                 </div>
             </div>
 
             <div class="card text-center">
-                <div class="card-header bg-secondary text-light">POSTRE: BANDEJA DE OKASHI</div>
+                <div class="card-header bg-dark text-light">POSTRE: BANDEJA DE OKASHI</div>
                 <div class="card-body">
                     <p class="card-text"> Bandeja de Okashi</p>
                 </div>
@@ -442,7 +449,9 @@
     </section>
 
     <section id="menu-bebidas" class="bg-light">
-        <h3 class="text-center h3-font py-5">BEBIDAS</h3>
+        <h4 class="text-center h4-font py-5"> 
+                 <span class="h4-border-x">BEBIDAS</span> 
+        </h4>
 
         <div class="contenedor container pb-5">
             <div class="carousel">
@@ -455,10 +464,10 @@
                         <div class="carousel__elemento border">
                             <img src="./assets/images/slider/2.jpg" alt="Agua y gaseosas">
                             <!-- <p>Rock and Roll Hall of Fame</p> -->
-                            <h5 class="card-title mt-3">AGUA MINERAL Y GASEOSAS</h5>
+                            <h5 class="card-title mt-3">AGUA Y GASEOSAS</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Agua mineral Con gas 500ml</li>
-                                <li class="list-group-item">Agua mineral Sin gas 500ml</li>
+                                <li class="list-group-item">Agua mineral Con gas</li>
+                                <li class="list-group-item">Agua mineral Sin gas</li>
                                 <li class="list-group-item">Coca Cola 354ml</li>
                                 <li class="list-group-item">Sprite 354ml</li>
                                 <li class="list-group-item">Fanta 354ml</li>
@@ -469,10 +478,10 @@
                             <img src="./assets/images/slider/3.jpg" alt="CERVEZA">
                             <h5 class="card-title mt-3">CERVEZA</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Orion 350ml</li>
-                                <li class="list-group-item">Sapporo 355ml</li>
-                                <li class="list-group-item">Heineken 354ml</li>
-                                <li class="list-group-item">Heineken 473ml</li>
+                                <li class="list-group-item">Orion</li>
+                                <li class="list-group-item">Sapporo</li>
+                                <li class="list-group-item">Heineken</li>
+                                <li class="list-group-item">Heineken</li>
                             </ul>
                         </div>
 
@@ -499,7 +508,7 @@
         
                         <div class="carousel__elemento border">
                             <img src="./assets/images/slider/6.jpg" alt="Bebidas frutales con alcohol">
-                            <h5 class="card-title mt-3">BEBIDAS FRUTALES CON ALCOHOL</h5>
+                            <h5 class="card-title mt-3">FRUTALES CON ALCOHOL</h5>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Ichigo aperol spritz/sparkling</li>
                                 <li class="list-group-item">Maracuya aperol spritz/sparkling</li>
@@ -510,12 +519,13 @@
 
                         <div class="carousel__elemento border">
                             <img src="./assets/images/slider/7.jpg" alt="Bebidas frutales sin alcohol">
-                            <h5 class="card-title mt-3">BEBIDAS FRUTALES SIN ALCOHOL</h5>
+                            <h5 class="card-title mt-3">BEBIDAS FRUTALES</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Orion 350ml</li>
-                                <li class="list-group-item">Sapporo 355ml</li>
-                                <li class="list-group-item">Heineken 354ml</li>
-                                <li class="list-group-item">Heineken 473ml</li>
+                                <li class="list-group-item">Ichigo arándano ape</li>
+                                <li class="list-group-item">Mango maracuya</li>
+                                <li class="list-group-item">Litchi ape</li>
+                                <li class="list-group-item">Melon kiwi ape</li>
+                                <li class="list-group-item">Longan Ape</li>
                             </ul>
                         </div>
 
@@ -568,15 +578,15 @@
     </section>
 
     <section id="nosotros">
-        <h1 class="h1-font bg-primary">NOSOTROS</h1>
+        <h1 class="h1-font">NOSOTROS</h1>
         <div class="container card my-4 bg-light">    
-            <p class="text-center p-2 font-size-2rem">QUIÉNES SOMOS 腹切り・でうなについて</p>
+            <p class="text-center p-2 font-size-2rem nosotros-font"> ¿QUIÉNES SOMOS? 腹切り・でうなについて</p>
             
                 <div class="row align-items-center">
-                    <div class="col-lg-4 py-4 text-center border border-top-0 border-left-0 border-bottom-0">
+                    <div class="col col-12 col-xxl-4 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 py-4 text-center border border-top-0 border-left-0 border-bottom-0">
                         <img src="./assets/images/nosotros.jpg" alt="foto del equipo de Harakiri de una">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col col-12 col-xxl-7 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p> Somos un restaurante de comida japonesa fundado por tres emprendedores Argentinos el 9
                             de Julio del 2020 en Palermo, Ciudad de Buenos Aires. 
                         </p>    
@@ -591,7 +601,7 @@
                     </div>
                 </div>    
             
-            <p class="text-center p-1 font-size-2rem text-uppercase mt-5">Acerca del servicio サービスについて</p>
+            <p class="text-center p-1 font-size-2rem text-uppercase mt-5 nosotros-font">Acerca del servicio サービスについて</p>
 
             <p> Los platos se elaboran en el momento de realizado el pedido, por ello recomendamos solicitarlos con
                 la
@@ -621,7 +631,7 @@
 
     <section id="contacto">
 
-        <h1 class="h1-font bg-primary">CONTACTO</h1>
+        <h1 class="h1-font">CONTACTO</h1>
 
         <div class="form-container d-flex p-5">
 

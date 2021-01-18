@@ -2,11 +2,14 @@ $orbitron: ("Orbitron", sans-serif);
 $nerko-one: ("Nerko One", cursive);
 $verdana: (Verdana, Tahoma, sans-serif);
 $trebuchet-ms: ("Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif);
+$LongCang: ('Long Cang', cursive);
+$SedgwickAve: ('Sedgwick Ave Display', cursive);
 
-
-$h1-font: $orbitron;
+$h1-font: $SedgwickAve;
 $h3-font: $nerko-one;
-$h6-font: $trebuchet-ms;
+$h4-font: $LongCang;
+$h6-font: $SedgwickAve;
+$nosotros-font: $SedgwickAve;
 $footer-form-font: $verdana;
 $footer-a-font: $trebuchet-ms;
 
@@ -14,9 +17,12 @@ $footer-a-font: $trebuchet-ms;
     font-size: 2rem;
 }
 
+/* Título de las secciones*/
 .h1-font{
     font-family: $h1-font;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-top: 1rem;
+    background: rgb(194, 8, 8);
 }
 
 .h3-font{
@@ -24,4 +30,26 @@ $footer-a-font: $trebuchet-ms;
     font-size: 4rem;
 }
 
+.h3-font-small{
+    font-family: $h3-font;
+    font-size: 2rem;
+}
+
+.h4-font{
+    font-family: $h4-font;
+    font-size: 5rem;
+}
+
+/* Titulo flip card MENU */
+h6{
+    font-family: $h6-font;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    
+}
+
+.nosotros-font{
+    font-family: $nosotros-font;
+    font-size: 2rem;
+}
 
