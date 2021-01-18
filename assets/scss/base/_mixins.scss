@@ -3,6 +3,10 @@
     gap: $gap;
   }
 
+  @mixin mixin-justify-self($position) {
+    justify-self: $position;
+  }  
+
 @mixin mixin-bf-visibility($visibility) {
   -moz-backface-visibility: $visibility;
   -moz-backface-visibility: $visibility;

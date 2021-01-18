@@ -14,14 +14,14 @@
 	cursor: pointer;
 	line-height: 30px;
 	text-align: center;
-	background: none;
-	color: black;
-	opacity: 20%;
+	background: black;
+	color: white;
+	opacity: 100%;
 }
 
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
-	opacity: 100%;
+	opacity: 20%;
 }
 
 .carousel__anterior {
@@ -66,11 +66,24 @@
 		padding: 40px 0;
 	}
 
-	.contenido-principal {
-		flex-direction: column;
-	}
+	// .contenido-principal {
+	// 	flex-direction: column;
+	// }
 
 	.contenido-principal > * {
 		width: 100%;
 	}
+
+	.carousel__anterior {
+		left: 0px;
+		z-index: 10;
+	
+	}
+	
+	.carousel__siguiente {
+		right: 0;
+		z-index: 10;
+		
+	}
+
 }

@@ -8,7 +8,8 @@ section > h1{
 
 .btn-color{
     background: $custom-red;
-    color: lightgrey;
+    color: white;
+    font-weight: 500;
 }
 
 .h4-border-x{
@@ -133,11 +134,10 @@ section > h1{
 .obento-grid{
 
     @extend %grid-area-autorows;
-    @include mixin-grid(2,1rem);
-
+    @include mixin-grid(2,10rem);
 
     @media only screen and (max-width: $width-sm) {
-        @include mixin-grid(2,1.5rem);
+        @include mixin-grid(2,4rem);
     }
 
     @media only screen and (max-width: $width-xs) {
@@ -162,6 +162,38 @@ section > h1{
     }
 }
 
+.flip-card-r{
+    background-color: transparent;
+    width: 300px;
+    height: 340px;
+    perspective: 1000px;
+    @include mixin-justify-self(right);
+
+    @media only screen and (max-width: $width-sm) {
+        @include mixin-justify-self(right);
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        @include mixin-justify-self(center);
+    }
+}
+
+.flip-card-l{
+    background-color: transparent;
+    width: 300px;
+    height: 340px;
+    perspective: 1000px;
+    @include mixin-justify-self(left);
+
+    @media only screen and (max-width: $width-sm) {
+        @include mixin-justify-self(left);
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        @include mixin-justify-self(center);
+    }
+}
+
 
 /* FLIP CARD BEGIN */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -171,7 +203,7 @@ section > h1{
     height: 340px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
-    justify-self: center;
+    @include mixin-justify-self(center);
 }
   
 .flip-card-front > img {
