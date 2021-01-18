@@ -8,6 +8,7 @@ $SedgwickAve: ('Sedgwick Ave Display', cursive);
 $h1-font: $SedgwickAve;
 $h3-font: $nerko-one;
 $h4-font: $LongCang;
+$h5-font: $nerko-one;
 $h6-font: $SedgwickAve;
 $nosotros-font: $SedgwickAve;
 $footer-form-font: $verdana;
@@ -58,6 +59,12 @@ $footer-a-font: $trebuchet-ms;
     }
 }
 
+/* Titulo seccion contacto y mapa */
+h5{
+    font-family: $h5-font;
+    font-size: 2rem;
+}
+
 /* Titulo flip card MENU */
 h6{
     font-family: $h6-font;
@@ -65,6 +72,8 @@ h6{
     padding-top: 10px;
     
 }
+
+
 
 .nosotros-font{
     font-family: $nosotros-font;

@@ -48,7 +48,11 @@ section > h1{
     }    
 }
 
-#nosotros{
+/*  <---  <section id="pedir-online"> */
+
+/* <section id="nosotros">  --->  */ 
+
+.nosotros-img{
     img{
         width: 400px;
         height: 400px;
@@ -65,37 +69,84 @@ section > h1{
     }
 }
 
-/*  <---  <section id="contacto"> */
+.samurai{
+    img{
+        width: 250px;
+        
+        @media only screen and (max-width: 1824px) {
+            display: none;
+        }
+    }
+}
+
+.espejo img{
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+  
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/*  <---  <section id="nosotros"> */
 
 /* <section id="contacto">  --->  */
-.form-container{
-    background-image: url("../images/email-concept.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: flex-end;
+.contacto-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
     @media only screen and (max-width: $width-sm) {
-        justify-content: center;
-    }    
+        justify-content:center;
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        justify-content:center;
+        flex-direction: column;
+    }
+
+}
+.form-container{
+    justify-content: center;
+    width: 30vw;
+
+    @media only screen and (max-width: $width-md) {
+        width: 50vw;
+    }
+
+    @media only screen and (max-width: $width-sm) {
+        width: 90vw;
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        width: 100vw;
+    }
 }
 
-.contact-map-container {
-    @extend %flex-wrap-center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background: $bg-gradient-contact-map;
-    padding: 2em 0;
+.katana img{
+    width: 8vw;
+    height: 40vh;
 }
-  
+
 .contact-map {
     text-align: center;
-    padding-bottom: 1em;
+    padding-bottom: 2rem;
 }
   
 .contact-map iframe {
-    width: 60vw;
-    height: 60vh;
-    margin-left: 1vw;
+    width: 50vw;
+    height: 50vh;
+
+    @media only screen and (max-width: $width-md) {
+        width: 70vw;
+    }    
+    @media only screen and (max-width: $width-sm) {
+        width: 80vw;
+    }
+    @media only screen and (max-width: $width-xs) {
+        width: 90vw;
+    }
 }
   
 .contact-map-datos {

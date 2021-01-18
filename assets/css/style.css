@@ -5,7 +5,7 @@ md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 /* COLORS */
 /* BACKGROUND COLOR*/
-#footer-container, .menu-container, .contact-map-container {
+.menu-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,6 +64,12 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
   .h4-font {
     font-size: 3rem;
   }
+}
+
+/* Titulo seccion contacto y mapa */
+h5 {
+  font-family: "Nerko One", cursive;
+  font-size: 2rem;
 }
 
 /* Titulo flip card MENU */
@@ -140,54 +146,111 @@ section > h1 {
   }
 }
 
-#nosotros img {
+/*  <---  <section id="pedir-online"> */
+/* <section id="nosotros">  --->  */
+.nosotros-img img {
   width: 400px;
   height: 400px;
 }
 @media only screen and (max-width: 991px) {
-  #nosotros img {
+  .nosotros-img img {
     width: 350px;
     height: 350px;
   }
 }
 @media only screen and (max-width: 768px) {
-  #nosotros img {
+  .nosotros-img img {
     width: 300px;
     height: 300px;
   }
 }
 
-/*  <---  <section id="contacto"> */
-/* <section id="contacto">  --->  */
-.form-container {
-  background-image: url("../images/email-concept.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: flex-end;
+.samurai img {
+  width: 250px;
 }
-@media only screen and (max-width: 991px) {
-  .form-container {
-    justify-content: center;
+@media only screen and (max-width: 1824px) {
+  .samurai img {
+    display: none;
   }
 }
 
-.contact-map-container {
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
-  padding: 2em 0;
+.espejo img {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/*  <---  <section id="nosotros"> */
+/* <section id="contacto">  --->  */
+.contacto-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 991px) {
+  .contacto-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  justify-content: center;
+  width: 30vw;
+}
+@media only screen and (max-width: 1199px) {
+  .form-container {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .form-container {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 100vw;
+  }
+}
+
+.katana img {
+  width: 8vw;
+  height: 40vh;
 }
 
 .contact-map {
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 2rem;
 }
 
 .contact-map iframe {
-  width: 60vw;
-  height: 60vh;
-  margin-left: 1vw;
+  width: 50vw;
+  height: 50vh;
+}
+@media only screen and (max-width: 1199px) {
+  .contact-map iframe {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-map iframe {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-map iframe {
+    width: 90vw;
+  }
 }
 
 .contact-map-datos {
@@ -375,22 +438,25 @@ section > h1 {
   margin: 0 10px;
 }
 
-.footer-options li {
-  list-style: none;
-  text-align: center;
+.footer-datos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.footer-sub-datos {
+  display: flex;
+  flex-direction: column;
 }
 
 #footer-container {
-  background-color: #312a2a;
-  color: white;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-  gap: 1em;
+  background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  font-size: large;
 }
 
 #footer-container a {
-  color: white;
+  color: black;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 

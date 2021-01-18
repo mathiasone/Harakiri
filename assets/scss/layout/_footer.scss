@@ -5,23 +5,25 @@
     }
 }
   
-.footer-options li {
-    list-style: none;
-    text-align: center;
-}  
+.footer-datos{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content:space-evenly;
+}
+
+.footer-sub-datos{
+  display: flex;
+  flex-direction: column;
+}
 
 #footer-container{
-  @extend %flex-wrap-center;
-  background-color:rgb(49, 42, 42);
-  color: white;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-  gap: 1em;
+  background: $lgrad-purple-orange;
+  font-size: large;
 }
 
 #footer-container a{
-  color: white;
+  color: black;
   font-family: $footer-a-font;
 }
   
