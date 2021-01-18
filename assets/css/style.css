@@ -28,12 +28,24 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
   padding-top: 1rem;
   background: #c20808;
 }
+@media only screen and (max-width: 991px) {
+  .h1-font {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .h1-font {
+    font-size: 2rem;
+  }
+}
 
+/* Fuente titulo principal Carousel*/
 .h3-font {
   font-family: "Nerko One", cursive;
   font-size: 4rem;
 }
 
+/* Fuente titulo secundario Carousel*/
 .h3-font-small {
   font-family: "Nerko One", cursive;
   font-size: 2rem;
@@ -42,6 +54,16 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 .h4-font {
   font-family: "Long Cang", cursive;
   font-size: 5rem;
+}
+@media only screen and (max-width: 991px) {
+  .h4-font {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .h4-font {
+    font-size: 3rem;
+  }
 }
 
 /* Titulo flip card MENU */
@@ -500,6 +522,10 @@ section > h1 {
     padding: 40px 0;
   }
 
+  .contenido-principal {
+    flex-direction: column;
+  }
+
   .contenido-principal > * {
     width: 100%;
   }
@@ -512,6 +538,11 @@ section > h1 {
   .carousel__siguiente {
     right: 0;
     z-index: 10;
+  }
+
+  .carousel__elemento img {
+    width: 440px;
+    height: 248px;
   }
 }
 /* ------------------------------------------------ GLOBAL ------------------------------------------------ */

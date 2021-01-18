@@ -66,9 +66,9 @@
 		padding: 40px 0;
 	}
 
-	// .contenido-principal {
-	// 	flex-direction: column;
-	// }
+	.contenido-principal {
+	 	flex-direction: column;
+	 }
 
 	.contenido-principal > * {
 		width: 100%;
@@ -84,6 +84,11 @@
 		right: 0;
 		z-index: 10;
 		
+	}
+
+	.carousel__elemento img{
+		width: 440px;
+		height: 248px;
 	}
 
 }
