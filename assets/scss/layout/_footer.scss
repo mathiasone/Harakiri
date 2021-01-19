@@ -13,7 +13,7 @@
   justify-content: space-around;
 
   @media only screen and (max-width: $width-sm) {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   @media only screen and (max-width: $width-xs) {   
@@ -27,7 +27,7 @@
   
 
   @media only screen and (max-width: $width-sm) {
-    margin-right: auto;
+    margin-left: 2rem;
   }
 
   @media only screen and (max-width: $width-xs) {   
