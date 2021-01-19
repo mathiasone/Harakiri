@@ -457,13 +457,39 @@ section > h1 {
 .footer-datos {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 991px) {
+  .footer-datos {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-datos {
+    justify-content: flex-start;
+  }
 }
 
 .footer-sub-datos {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 991px) {
+  .footer-sub-datos {
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-sub-datos {
+    margin: 2rem;
+  }
+}
+
+.footer-derechos p {
+  margin: 0;
+  font-weight: bold;
 }
 
 #footer-container {
@@ -600,10 +626,6 @@ section > h1 {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    padding: 40px 0;
-  }
-
   .contenido-principal {
     flex-direction: column;
   }
