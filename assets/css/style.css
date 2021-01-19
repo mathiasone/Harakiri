@@ -209,7 +209,7 @@ section > h1 {
 }
 @media only screen and (max-width: 1199px) {
   .form-container {
-    width: 50vw;
+    width: 80vw;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -472,7 +472,7 @@ section > h1 {
 }
 
 #footer-container a {
-  color: black;
+  color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
