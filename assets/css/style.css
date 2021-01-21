@@ -30,12 +30,12 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 }
 @media only screen and (max-width: 991px) {
   .h1-font {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .h1-font {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
