@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
 			  }
 			},{
 			  // screens greater than >= 1024px
-			  breakpoint: 800,
+			  breakpoint: 769,
 			  settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3
