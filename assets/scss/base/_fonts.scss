@@ -21,16 +21,16 @@ $footer-a-font: $trebuchet-ms;
 /* Título de las secciones*/
 .h1-font{
     font-family: $h1-font;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-top: 1rem;
     background: rgb(194, 8, 8);
 
     @media only screen and (max-width: $width-sm) {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     @media only screen and (max-width: $width-xs) {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -38,12 +38,32 @@ $footer-a-font: $trebuchet-ms;
 .h3-font{
     font-family: $h3-font;
     font-size: 4rem;
+
+    @media only screen and (max-width: $width-sm) {
+        font-size: 3rem;
+        margin: 0;
+        padding:0;
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        font-size: 2rem;
+        margin: 0;
+        padding:0;
+    }
 }
 
 /* Fuente titulo secundario Carousel*/
 .h3-font-small{
     font-family: $h3-font;
     font-size: 2rem;
+
+    @media only screen and (max-width: $width-sm) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $width-xs) {
+        font-size: 1rem;
+    }
 }
 
 .h4-font{
@@ -55,7 +75,7 @@ $footer-a-font: $trebuchet-ms;
     }
 
     @media only screen and (max-width: $width-xs) {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 

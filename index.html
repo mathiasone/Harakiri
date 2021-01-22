@@ -112,8 +112,8 @@
 
     <main>
         <div id="carouselMainSection"></div>
-        <!-- SOLO EN DESKTOP/NOTEBOOK -->
-        <div id="carouselMain" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+        <!-- SOLO EN DESKTOP/NOTEBOOK  d-none d-md-block -->
+        <div id="carouselMain" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselMain" data-slide-to="1"></li>
@@ -121,9 +121,9 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item bg-overlay active" data-bs-interval="5000">
-                    <img class="d-block c-item-custom img-fluid" loading="lazy" src="./assets/images/menu-art.jpg"
+                    <img class="d-block c-item-custom" loading="lazy" src="./assets/images/menu-art.jpg"
                         alt="sushi con descipción de la nueva promoción">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <p class="text-lg-center h3-font">PROMO NUEVA WEB</p>
                         <p class="text-lg-center h3-font-small">15% OFF durante Diciembre</p>
                     </div>
@@ -131,14 +131,15 @@
                 <div class="carousel-item bg-overlay" data-bs-interval="5000">
                     <img class="d-block c-item-custom img-fluid" loading="lazy" src="./assets/images/main-cover.jpg"
                         alt="Combinado de sushi con la presentación de harakiri">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p class="text-lg-center h3-font">Calidad garantizada</p>
+                    <div class="carousel-caption">
+                        <p class="text-lg-center h3-font d-none d-lg-block">Calidad garantizada</p>
+                        <p class="text-lg-center h3-font d-lg-none pb-4">Calidad garantizada</p>
                     </div>
                 </div>
                 <div class="carousel-item bg-overlay" data-bs-interval="5000">
                     <img class="d-block c-item-custom img-fluid" loading="lazy" src="./assets/images/main-cover1.jpg"
                         alt="fecha y horario de inauguración">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <p class="text-lg-center h3-font">¡ ABRIMOS !</p>
                         <p class="text-lg-center h3-font-small">Vení a visitarnos el 22/12/2020 a las 19hs</p>
                     </div>
@@ -153,13 +154,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-        <!-- SOLO EN MOBILE -->
-        <div class="bg-overlay d-lg-none">
-            <img class="d-block cm-item-custom" loading="lazy" src="./assets/images/main-cover-mobile.jpg"
-                alt="Combinado de sushi con la presentación de harakiri">
-        </div>
-
     </main>
 
 
