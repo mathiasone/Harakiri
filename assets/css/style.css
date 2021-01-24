@@ -683,16 +683,6 @@ section > h1 {
     width: 75%;
   }
 
-  .carousel__anterior {
-    left: 0px;
-    z-index: 10;
-  }
-
-  .carousel__siguiente {
-    right: 0;
-    z-index: 10;
-  }
-
   .carousel__elemento img {
     width: 440px;
     height: 248px;
