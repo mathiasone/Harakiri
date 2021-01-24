@@ -574,10 +574,16 @@ section > h1 {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 991px) {
+  .carousel-caption {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .carousel-caption {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 
