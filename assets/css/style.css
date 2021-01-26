@@ -30,12 +30,12 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 }
 @media only screen and (max-width: 991px) {
   .h1-font {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .h1-font {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -541,16 +541,16 @@ section > h1 {
 
 .c-item-custom {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 @media only screen and (max-width: 991px) {
   .c-item-custom {
-    height: 60vh;
+    height: 70vh;
   }
 }
 @media only screen and (max-width: 768px) {
   .c-item-custom {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
