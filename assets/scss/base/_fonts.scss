@@ -26,11 +26,11 @@ $footer-a-font: $trebuchet-ms;
     background: rgb(194, 8, 8);
 
     @media only screen and (max-width: $width-sm) {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     @media only screen and (max-width: $width-xs) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -66,16 +66,17 @@ $footer-a-font: $trebuchet-ms;
     }
 }
 
+/* Titulo sub-secciones de la seccion MENU*/
 .h4-font{
     font-family: $h4-font;
     font-size: 5rem;
 
     @media only screen and (max-width: $width-sm) {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     @media only screen and (max-width: $width-xs) {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }
 

@@ -30,12 +30,12 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
 }
 @media only screen and (max-width: 991px) {
   .h1-font {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .h1-font {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -75,18 +75,19 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
   }
 }
 
+/* Titulo sub-secciones de la seccion MENU*/
 .h4-font {
   font-family: "Long Cang", cursive;
   font-size: 5rem;
 }
 @media only screen and (max-width: 991px) {
   .h4-font {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .h4-font {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -544,12 +545,12 @@ section > h1 {
 }
 @media only screen and (max-width: 991px) {
   .c-item-custom {
-    height: 75vh;
+    height: 60vh;
   }
 }
 @media only screen and (max-width: 768px) {
   .c-item-custom {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
